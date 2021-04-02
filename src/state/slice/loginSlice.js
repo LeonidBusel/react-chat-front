@@ -16,7 +16,6 @@ export const loginSlice = createSlice({
             state.nickColor = payload.nickColor;
         },
         logout: state => {
-            console.log("logout:");
             state.isLogin = false;
             state.nickName = null;
             state.nickColor = null;

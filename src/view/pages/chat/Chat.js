@@ -26,13 +26,12 @@ const Chat = (props) => {
     /* didMount */
     useEffect(() => {
         if (!isLogin) {
-            history.push("/");
+            history.push("/react-chat-front");
 
             return;
         }
 
         ws = ChatWebSocket({ nickName, nickColor, msgAllCallback, activeUserCallback, logoutUserCallback });
-        console.log(ws);
     }, []);
 
     const sendMsgHandle = (values) => {
@@ -47,7 +46,7 @@ const Chat = (props) => {
         props.activeUser(activeUser)
     }
 
-    
+
     const logoutUserCallback = () => {
         props.logout();
         props.close();
@@ -77,8 +76,8 @@ const Chat = (props) => {
                 <Title className="title">Global Chat!</Title>
             </Header>
             <Content className="chat-content-wrapper">
-                <Row><Link to="/">&lt; back to welcome page</Link></Row>
-                <Row>
+                <Row><Link to="/react-chat-front">&lt; back to welcome page</Link></Row>
+                <Row gutter={24}>
                     <Col span={16}><ChatArea allMsg={allMsg} sendMsgHandle={sendMsgHandle} /></Col>
                     <Col span={8}><ActiveUser allUser={allActiveUser} /></Col>
                 </Row>

@@ -6,6 +6,7 @@ const Routes = () => {
     return (
         <Switch>
             <Route path='/' exact component={Welcome} />
+            <Route path='/react-chat-front' exact component={Welcome} />
             <PrivateRoute path="/chat" exact component={Chat} />
             <Route path='*' exact component={Welcome} />
         </Switch>
