@@ -1,0 +1,21 @@
+.welcome-wrapper {
+    text-align: center;
+
+    .title {
+        color: #fff;
+    }
+
+    main {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+
+        form {
+            margin-top: 50px;
+
+            .ant-form-item-extra {
+                text-align: left;
+            }
+        }
+    }
+}

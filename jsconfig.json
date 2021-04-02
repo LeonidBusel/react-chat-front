@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@components": [
+        "src/view/components/index.js"
+      ],
+      "@pages": [
+        "src/view/pages/index.js"
+      ],
+      "@slice/*": [
+        "src/state/slice/*"
+      ],
+      "@store": [
+        "src/state/slice/store.js"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,27 @@
+.chat-area-wrapper {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .chat-body {
+        height: 600px;
+        overflow: auto;
+        padding: 8px 24px;
+    }
+
+    .msg-send-form {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 24px;
+
+        .text-area-wrapper {
+            flex-grow: 2;
+        }
+    }
+
+    .ant-list-item {
+        text-align: left;
+    }
+}
