@@ -1,6 +1,7 @@
 {
   "name": "front",
   "version": "0.1.0",
+  "homepage": "https://leonidbusel.github.io/react-chat-front/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
@@ -21,7 +22,9 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build"
+    "build": "react-app-rewired build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,7 @@
   },
   "devDependencies": {
     "customize-cra": "^1.0.0",
+    "gh-pages": "^3.1.0",
     "react-app-rewired": "^2.1.8"
   }
 }

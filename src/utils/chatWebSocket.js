@@ -1,5 +1,5 @@
 const ChatWebSocket = ({ nickName, nickColor, msgAllCallback, activeUserCallback, logoutUserCallback }) => {
-    const ws = new WebSocket("ws://chat-nodejs-leonid.herokuapp.com/");
+    const ws = new WebSocket("wss://chat-nodejs-leonid.herokuapp.com/");
 
     ws.onopen = () => {
         console.log('websocket is connected...');
